@@ -1,0 +1,818 @@
+@font-face {
+    font-family: Groundation Foundation;
+    src: url(groundation_foundation/Groundation\ Foundation.ttf);
+}
+@font-face {
+     font-family: Louis;
+     src: url(louis_george_cafe/Louis\ George\ Cafe.ttf);
+}
+@font-face {
+  font-family: Dream Orphan;
+  src: url(dream_orphans/Dream\ Orphans\ Bd.otf);
+}
+
+body{   
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+  background-color: #FF914D;
+  font-family: Dream Orphan;
+  size: 20%;
+  z-index: 1000;
+  text-align: space-between;
+
+}
+.navbar-toggler-icon {
+  color: white; 
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.star {
+  transform-style: preserve-3d;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  color: red;
+}
+.star:before {
+  position: absolute;
+  content: '\2726';
+  color: inherit;
+  inset: 0;
+  box-shadow: 0 0 1em .5em rgba(84, 49, 94, 0.133);
+  filter: drop-shadow(0 0 .8em white);
+  text-shadow: 0 0 .8em #fff5;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #44291b;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+.footer p {
+  margin: 0;
+  color: #fff;
+}
+
+.copyright-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/*HOME*/
+.wrap {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('Imagenes/fondo\ 1.png');
+    background-size: cover;
+}
+
+.wrap-texto {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 27%; 
+    transform: translate(-40%, -60%);
+}
+.wrap-texto h2 {
+    color: #FF914D;
+    font-size: 3.5vw;
+    font-family: Groundation Foundation;
+    margin-top: 45%;
+    margin-left: 10%;
+    width: 60%;
+}
+.wrap-texto h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1.7vw;
+    font-family: Louis;
+    margin-top: 70px;
+    margin-left: 70px;
+    width: 50%;
+    text-align: left;
+}
+
+.wrap-texto h6 {
+    color: rgb(0, 0, 0);
+    font-size: 1.7vw;
+    font-family: Louis;
+    margin-top: 30px;
+    margin-left: 70px;
+    width: 45%;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .wrap-texto h2 {
+        font-size: 10vw; 
+    }
+
+    .wrap-texto h6 {
+        font-size: 3vw;
+    }
+}
+
+#cont-cubo {
+  margin: 15px;
+  margin: 10%;
+  perspective:600px;
+  animation:cont-cubo 10s infinite linear;
+}
+
+.cubo {
+  position: relative;
+  margin: 0 auto;
+  margin-left: 40%;
+  margin-bottom: 7%;
+  height: 200px;
+  width: 200px;
+  animation:giro 25s infinite linear;
+  transform-style:preserve-3d;
+  }
+.cubo div {
+  position: absolute;
+  
+  height: 200px;
+  width: 200px;
+  animation:rotate 15s infinite linear;
+  }
+  .cubo div img {
+    width:200px;
+    height:200px;
+    border-radius:200px;
+    margin: 0; padding: 0; border: 0 none transparent;
+    animation:rot 5s infinite linear;
+  }
+  .cubo div.cara1 {
+  background:rgba(0,102,153,.5);
+  transform:translateZ(100px);
+  }
+  .cubo div.cara2 {
+  background:rgba(150,153,0,.7);
+  transform:rotateY(90deg) translateZ(100px);
+  }
+  .cubo div.cara3 {
+  background:rgba(39,116,61,.7);
+  transform:rotateY(180deg) translateZ(100px);
+  }
+  .cubo div.cara4 {
+  background:rgba(105,136,165,.7);
+  transform:rotateY(-90deg) translateZ(100px);
+  }
+  .cubo div.cara5 {
+  background:rgba(223,48,48,.7);
+  transform:rotateX(-90deg) translateZ(100px) rotate(180deg);
+  }
+  .cubo div.cara6 {
+  background:rgba(144,153,102,.7);
+  transform:rotateX(90deg) translateZ(100px);
+  }
+  @keyframes giro {
+    0% {transform: rotateX(0deg)   rotateY(0deg);}
+    100% {transform: rotateX(1080deg) rotateY(360deg);
+    }
+  }
+  @keyframes rot {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/*SOBRE LA VANGUARDIA 1*/
+.fondo {
+    width: 100%;
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('Imagenes/header\ 1.jpg');
+    background-size: cover;
+}
+
+.fondo-1 h2{
+    color: #f9e1d2;
+    font-size: 6vw;
+    font-family: Groundation Foundation;
+    margin-left: 15%;
+    padding-top: 7%;
+    width: 70%;
+    text-align: center
+}
+.historia p{
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  font-family: Louis;
+  width: 60%; 
+  margin: 40px auto; 
+  text-align: justify;
+}
+.container {
+  position: relative;
+}
+
+.text {
+  font-size: 16em; 
+  font-weight: bold;
+  position: relative;
+  z-index: 1; 
+  color: black; 
+  background-image: url('Imagenes/header\ 2.jpg'); 
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  animation: distortion 10s infinite alternate; 
+  
+}
+
+@keyframes distortion {
+  from {
+      background-position: 0 0; 
+  }
+  to {
+      background-position: 100% 100%; 
+  }
+}
+
+.text:hover {
+  animation: backwards; 
+  background-color: transparent; 
+  background-position: 0 0; 
+}
+.container-1 {
+  background-image: url('Imagenes/fondo 2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px; 
+  text-align: center; 
+}
+
+.container-1 p {
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  font-family: Louis;
+  width: 50%; 
+  margin: 20px auto; 
+}
+
+.container-1 h5 {
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  font-family: Louis;
+  width: 55%; 
+  margin: 20px auto; 
+  text-align: justify;
+}
+/*SOBRE LA VANGUARDIA 2*/
+
+.titulo-3{
+  display: flex;
+  flex-direction: column;
+}
+.titulo-3 h1{
+    color: #ff6200; 
+    font-size: 9vw;
+    font-family: Groundation Foundation;
+    margin-left: 17%;
+    width: 70%;
+    text-align: center;
+    line-height: 80px;
+    
+}
+.titulo-3 h2{
+  color: #f2945a;
+  font-size: 4vw;
+  font-family: Groundation Foundation;
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 70%;
+  text-align: center;
+}
+
+.historia-2 p{
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  font-family: Louis;
+  width: 60%; 
+  margin: 40px auto; 
+  text-align: justify;
+}
+img {
+  max-width: 100%;
+}
+
+.gallery-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 5rem;
+
+  .gallery-2-image {
+    padding: 0.5rem 0.5rem 1.5rem;
+    background: white;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    transform-origin: center -5rem;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 10rem;
+      width: 2px;
+      background: saddlebrown;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+    }
+
+    &:nth-child(1) {
+      animation: 5s infinite bounce;
+      animation-name: image1;
+      transform: rotate(-10deg);
+    }
+
+    &:nth-child(2) {
+      animation: 4.5s infinite bounce;
+      animation-name: image2;
+      transform: rotate(8deg);
+    }
+
+    &:nth-child(3) {
+      animation: 4s infinite bounce;
+      animation-name: image3;
+      transform: rotate(-4deg);
+    }
+  }
+}
+
+@keyframes image1 {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes image2 {
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes image3 {
+  50% {
+    transform: rotate(6deg);
+  }
+}
+.fondo-3 {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('Imagenes/fondo-3.jpg');
+  background-size: cover;
+}
+
+.fondo-3 h5{
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  font-family: Louis;
+  width: 50%; 
+  margin: 20px auto; 
+}
+
+/*ARTISTAS*/
+.titulo-2 {
+  display: flex;
+  flex-direction: column;
+}
+.titulo-2 h1 {
+  color: #f6640a;
+  font-size: 10vw;
+  font-family: Groundation Foundation;
+  margin-left: 17%;
+  width: 70%;
+  text-align: left;
+  line-height: 80px;
+}
+.titulo-2 h2 {
+  color: #f2945a;
+  font-size: 4vw;
+  font-family: Groundation Foundation;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 70%;
+  text-align: left;
+}
+.contenedor-artista {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.image-area {
+  margin-right: 20px;
+}
+
+.texto-historia {
+  color: rgb(0, 0, 0);
+  font-size: 1.8vw;
+  font-family: Louis;
+  padding-bottom: 5%;
+  text-align: justify;
+  width: 55%;
+}
+
+.img-wrapper {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 180%;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .3);
+  z-index: 1;
+  transform: skew(45deg);
+  transition: .5s;
+}
+
+.img-wrapper:hover:before {
+  left: -180%;
+}
+
+.img-wrapper img {
+  height: 400px;
+  width: 300px;
+  filter: grayscale(100%);
+  transition: 2s;
+}
+
+.img-wrapper:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.img-wrapper h2 {
+  background: tomato;
+  font-family: Poppins;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: right;
+  transition: 1s;
+}
+
+.img-wrapper:hover h2 {
+  transform: perspective(400px) rotateY(0deg);
+}
+
+/* GALERIA DE OBRAS */
+.title-2 h1{
+  color: #FF914D;
+    font-size: 5vw;
+    font-family: Groundation Foundation;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+}
+.container-4 {
+  padding: 20px; 
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-right: 5%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-item .overlay p{
+  font-family: Louis;
+  font-size: 3.5vh;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.col-md-4 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+
+/*CONTACTO*/
+.container-form-1 {
+  height: 100vh;
+  background-image: url('Imagenes/contacto-1.jpg');
+  background-size: cover;
+}
+.frase-form h2{
+  color: #bd6229;
+  font-size: 3vw;
+  font-family: Groundation Foundation;
+  padding-top: 10%;
+  width: 50%;
+  text-align: right;
+  margin-left: 49%;
+}
+
+.container-form-2 {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 254, 251, 0.8); 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute; 
+  top: 60%; 
+  left: 50%; 
+  transform: translate(-85%, -50%); 
+  font-family: Louis;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.button-2 button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  color: #0b0b0b;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff9d15;
+}
+
+/*TECNICAS*/
+.header{
+  max-width: 100%;
+  overflow: hidden;
+} 
+.section-header{
+  background-image: url(Imagenes/tecnicas-2.jpg);
+  background-position: top right;
+  background-size: 90%;
+  background-repeat:no-repeat;
+  height: 100vh;
+  min-height: 750px;
+  width: 100%; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden; 
+  
+  &:before{
+    content:'';
+    height: 100%; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: -30%;
+    bottom: 0;
+    position: absolute;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/239533/white-swipe.png');
+    background-position: top right; 
+    background-size: cover; 
+    background-repeat:no-repeat;
+    z-index: 3;
+    animation: brush 1s linear forwards; 
+  }
+}
+.text-wrapper{
+  top: 50%;
+  opacity: 0;
+  left: 60%;
+  position: relative;
+  width: 40%; 
+  transform: translate(-50%, -50%);
+  animation: fadeInUp 1s linear forwards;
+  animation-delay: .75s;
+  max-width: 800px;
+
+  h1{
+    color: #000000;
+    font-family: Groundation Foundation;
+    font-size: 7vh;
+    text-transform: uppercase;
+  }
+  h3{
+    font-weight: 450;
+    letter-spacing: .03em; 
+    font-family: Louis;
+  }
+}
+@keyframes brush{
+    0%{
+      transform: translate(0, 0); 
+    }    
+    50%{
+      transform: translate(-50%, 5%);
+    } 
+    100%{
+      transform: translate(-100%, 12%);
+    }
+  }
+@keyframes fadeInUp{
+  0%{
+      opacity: 0; 
+      transform: translate(-50%, -25%); 
+    }  
+    50%{
+      opacity: .6;  
+      transform: translate(-50%, -50%);
+    } 
+    80%{
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    100%{
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+}
+.historia-tecnicas{
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  font-family: Louis;
+  width: 60%; 
+  margin: 40px auto; 
+  text-align: justify;
+}
+
+
+.flip-card-container {
+  position: relative;
+  top: 85%; 
+  left: 50%; 
+  transform: translate(-50%, -20%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  max-width: 1200px; 
+  z-index: 1;
+}
+.flip-card{
+  position: relative;
+  width: 400px;
+  height: 450px;
+  margin-right: 20px;
+  margin-top: 10%;
+}
+.flip-card .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+.flip-card .front{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.flip-card .front img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flip-card .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+}
+.flip-card .back{
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(67, 45, 1);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.flip-card .back .link1{
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+.flip-card .back .link1 a{
+  color: #f3f3f3;
+}
+.flip-card .back h3{
+ font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.flip-card .back p{
+  font-size: 1.1vw;
+  font-family: Louis;
+  text-align: justify;
+}
+.flip-card:hover .front{
+  transform: perspective(600px) rotateY(180deg);
+}
+.flip-card:hover .back{
+  transform: perspective(600px) rotateY(360deg);
+}
+@media (max-width: 768px) {
+    .flip-card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10rem;
+      margin-bottom: 3rem; 
+    }
+  
+    .flip-card {
+      width: 300px;
+      margin-bottom: 20px;  
+      margin-right: 20px;
+      margin-top: 8px; 
+    }
+  
+    #video-container {
+      min-height: calc(80vh + 850px);
+      padding-bottom: 200px;
+    }
+}
